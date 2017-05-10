@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3E7B58A1CC2AC0600A0062D /* RNOpentok.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNOpentok.m */; };
+		13BE3DEE1AC21097009241FE /* RNOpenTok.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BE3DED1AC21097009241FE /* RNOpenTok.m */; };
+		682EAA081EB76F8D006DACBF /* RNTSubscriberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 682EAA071EB76F8D006DACBF /* RNTSubscriberView.m */; };
+		682EAA0B1EB77105006DACBF /* RNTSubscriberViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 682EAA0A1EB77105006DACBF /* RNTSubscriberViewManager.m */; };
+		6848F4D81EB675D7001EBF82 /* RNTMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6848F4D71EB675D7001EBF82 /* RNTMapManager.m */; };
+		6848F4DB1EB67BF4001EBF82 /* RNTPublisherViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6848F4DA1EB67BF4001EBF82 /* RNTPublisherViewManager.m */; };
+		6848F4DE1EB67D16001EBF82 /* RNTPublisherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6848F4DD1EB67D16001EBF82 /* RNTPublisherView.m */; };
+		68EE0A791EB6390B00233A6C /* OpenTok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68EE0A781EB6390B00233A6C /* OpenTok.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,9 +29,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		134814201AA4EA6300B7C361 /* libRNOpentok.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNOpentok.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5881CC2AC0600A0062D /* RNOpentok.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOpentok.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* RNOpentok.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOpentok.m; sourceTree = "<group>"; };
+		134814201AA4EA6300B7C361 /* libRNOpenTok.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNOpenTok.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		13BE3DEC1AC21097009241FE /* RNOpenTok.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOpenTok.h; sourceTree = "<group>"; };
+		13BE3DED1AC21097009241FE /* RNOpenTok.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOpenTok.m; sourceTree = "<group>"; };
+		682EAA061EB76F1A006DACBF /* RNTSubscriberView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTSubscriberView.h; sourceTree = "<group>"; };
+		682EAA071EB76F8D006DACBF /* RNTSubscriberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTSubscriberView.m; sourceTree = "<group>"; };
+		682EAA091EB7709C006DACBF /* RNTSubscriberViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTSubscriberViewManager.h; sourceTree = "<group>"; };
+		682EAA0A1EB77105006DACBF /* RNTSubscriberViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTSubscriberViewManager.m; sourceTree = "<group>"; };
+		6848F4D71EB675D7001EBF82 /* RNTMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTMapManager.m; sourceTree = "<group>"; };
+		6848F4D91EB67B11001EBF82 /* RNTPublisherViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTPublisherViewManager.h; sourceTree = "<group>"; };
+		6848F4DA1EB67BF4001EBF82 /* RNTPublisherViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTPublisherViewManager.m; sourceTree = "<group>"; };
+		6848F4DC1EB67CEC001EBF82 /* RNTPublisherView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTPublisherView.h; sourceTree = "<group>"; };
+		6848F4DD1EB67D16001EBF82 /* RNTPublisherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTPublisherView.m; sourceTree = "<group>"; };
+		68EE0A781EB6390B00233A6C /* OpenTok.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenTok.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68EE0A791EB6390B00233A6C /* OpenTok.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +59,7 @@
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				134814201AA4EA6300B7C361 /* libRNOpentok.a */,
+				134814201AA4EA6300B7C361 /* libRNOpenTok.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -50,8 +67,18 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				B3E7B5881CC2AC0600A0062D /* RNOpentok.h */,
-				B3E7B5891CC2AC0600A0062D /* RNOpentok.m */,
+				682EAA0A1EB77105006DACBF /* RNTSubscriberViewManager.m */,
+				682EAA091EB7709C006DACBF /* RNTSubscriberViewManager.h */,
+				682EAA071EB76F8D006DACBF /* RNTSubscriberView.m */,
+				682EAA061EB76F1A006DACBF /* RNTSubscriberView.h */,
+				6848F4DD1EB67D16001EBF82 /* RNTPublisherView.m */,
+				6848F4DC1EB67CEC001EBF82 /* RNTPublisherView.h */,
+				6848F4DA1EB67BF4001EBF82 /* RNTPublisherViewManager.m */,
+				6848F4D91EB67B11001EBF82 /* RNTPublisherViewManager.h */,
+				6848F4D71EB675D7001EBF82 /* RNTMapManager.m */,
+				68EE0A781EB6390B00233A6C /* OpenTok.framework */,
+				13BE3DEC1AC21097009241FE /* RNOpenTok.h */,
+				13BE3DED1AC21097009241FE /* RNOpenTok.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,9 +86,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58B511DA1A9E6C8500147676 /* RNOpentok */ = {
+		58B511DA1A9E6C8500147676 /* RNOpenTok */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNOpentok" */;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNOpenTok" */;
 			buildPhases = (
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
@@ -71,9 +98,9 @@
 			);
 			dependencies = (
 			);
-			name = RNOpentok;
+			name = RNOpenTok;
 			productName = RCTDataManager;
-			productReference = 134814201AA4EA6300B7C361 /* libRNOpentok.a */;
+			productReference = 134814201AA4EA6300B7C361 /* libRNOpenTok.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -90,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNOpentok" */;
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNOpenTok" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -102,7 +129,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58B511DA1A9E6C8500147676 /* RNOpentok */,
+				58B511DA1A9E6C8500147676 /* RNOpenTok */,
 			);
 		};
 /* End PBXProject section */
@@ -112,7 +139,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E7B58A1CC2AC0600A0062D /* RNOpentok.m in Sources */,
+				13BE3DEE1AC21097009241FE /* RNOpenTok.m in Sources */,
+				6848F4D81EB675D7001EBF82 /* RNTMapManager.m in Sources */,
+				6848F4DE1EB67D16001EBF82 /* RNTPublisherView.m in Sources */,
+				682EAA081EB76F8D006DACBF /* RNTSubscriberView.m in Sources */,
+				6848F4DB1EB67BF4001EBF82 /* RNTPublisherViewManager.m in Sources */,
+				682EAA0B1EB77105006DACBF /* RNTSubscriberViewManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +184,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -186,7 +218,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -196,15 +228,20 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(SRCROOT)/../..",
+				);
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../React/**",
+					"$(SRCROOT)/../../node_modules/react-native/React/**",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNOpentok;
+				PRODUCT_NAME = RNOpenTok;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -212,15 +249,19 @@
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(SRCROOT)/../..",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../React/**",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNOpentok;
+				PRODUCT_NAME = RNOpenTok;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -228,7 +269,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNOpentok" */ = {
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNOpenTok" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511ED1A9E6C8500147676 /* Debug */,
@@ -237,7 +278,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNOpentok" */ = {
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNOpenTok" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511F01A9E6C8500147676 /* Debug */,
